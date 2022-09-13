@@ -1,0 +1,16 @@
+/* reset all items */
+*
+{
+padding: 0;
+margin: 0;
+box-sizing: border-box;  /* keeps the original size box, padding and margin shrink the content instead of adding to like default "content-box"*/
+}
+
+body
+ {
+    height: 100vh; /* viewport height measures percentage, by setting to 100, our 'body'will take 100 percent of the availale height space       */
+    background-color: dodgerblue;
+
+
+}
+
