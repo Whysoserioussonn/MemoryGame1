@@ -26,7 +26,13 @@ function flipCard()
         hasFlippedCard = false;
         secondCard = this;
         console.log({firstCard,secondCard}); //check to see if both cards are set to true in console after both cards are clicked in DOM
+        // check to see if cards match after they both been flipped, add data attribute in html to each image element.
+    
+    
     }
+
+
+
     }
 
 
