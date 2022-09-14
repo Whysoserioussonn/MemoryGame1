@@ -25,8 +25,9 @@ body
     height: 640px;
     display: flex;
     margin:auto; /*this will center it vertically and horizontally with parent set to display flex */
-   flex-wrap: wrap;
+    flex-wrap: wrap;
    /*border: 2px solid lime;  removed just used to see outline in beginning*/
+    perspective: 1000px;  /* 3D effect part1, add perspective to the card flipping by adding a space of depth*/
 }
 .memory-card 
 {
@@ -35,7 +36,11 @@ body
    height: calc(33.33% - 10px);  /* for height its 100/3 = 33.33% */
    margin: 5px;
    position: relative; /* we want the front face and back sapce position relaitve to the memory card */
-   
+   transform: scale(1);
+   transform-style: preserve-3d; /* 3Deffect part 2, thats whats going to preserve our 3d element inside the space we 
+   created in the memory container*/
+   transition: transform .5s;   /*3d effect part 3, have to add a transition to the transform property for effect to take effect*/
+
 
 }
 
@@ -45,6 +50,10 @@ body
     transition: .2s; /* makes transformation run smoother*/
 }
 
+.memory-card.flip
+{
+    transform:rotateY(180deg);
+}
 
 
 .front-face,.back-face
@@ -56,4 +65,12 @@ body
     position: absolute;
     border-radius: 5px;
     background-color: #1c7ccc; 
-}   
+    backface-visibility: hidden; /* 3D effect part 4 effect with different face on flip,every html element has a mirror image, have to hide it by setting it to hidden*/
+    
+
+}  
+
+.front-face
+{
+    transform: rotateY(180deg);  /*3D effect part 5, rotate the front face 180 degrees so we can see it*/
+}
