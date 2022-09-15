@@ -4,12 +4,15 @@ const cards = document.querySelectorAll('.memory-card');
 /* when a player clicks a card we have to know if its the first or second card hes flipped   */ 
 let hasFlippedCard = false;
 let firstCard,secondCard;
-let lockBoard = false; // we need this variable for bugs if a player tries to flip many cards at once, preventing a crash
+let lockBoard = false; // we need this variable for bugs if a player tries to flip many cards at once, causing a crash
+                        // this locks the board and prevents a second pair being flipped before the first pair finishes unflipping
+                        // incase its not a match, we have to lock the board and wait for the cards to finish unflipping
 
 /*  FLIP THE CARDS function */
 function flipCard()
 {
 if (lockBoard) return; // if its true, return so the rest doesnt get executed.
+if(this === firstCard) return; // prevents Double clicking the same card and matching itself to itself, causing a crash
 
     /*this.classList.toggle('flip')*/ /*The toggle() method of the DOMTokenList interface removes
                                      an existing token from the list and returns false. If the token
@@ -58,18 +61,26 @@ function disabledCards()
     {
         firstCard.removeEventListener('click',flipCard);
         secondCard.removeEventListener('click', flipCard);
+        resetBoard();
     }
 }
 // flips cards back to face down with a timeout so we can see it, otherwise its too fast to see the flip back state
 function unflipCards()
 {
-    lockBoard = true; // locks cards only after cards have been flipped
+    lockBoard = true; // in case its not a match, we lock the board and unlock only after cards have been flipped
     setTimeout(() => {    
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
-        lockBoard = false;
+        //lockBoard = false;  // this is where we unlock the board after the the cards have been unflipped
+                              // this got replaced with resetBoard
+        resetBoard();
     }, 1500);
 }
 
+function resetBoard()
+{   // use restructure sequence                    
+    [hasFlippedCard, lockBoard] = [false, false]; // same as hasFlippedCard = false, lockboard = false
+    [firstCard,secondCard] = [null, null];
+}
 }
 cards.forEach(card => card.addEventListener('click', flipCard));
