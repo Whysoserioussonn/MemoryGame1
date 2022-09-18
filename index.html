@@ -1,65 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Memory Game</title>
+  </head>
 
-    <link rel="stylesheet" href="styles.css">
+  <body>
+  <div class="title">MatchMaker MatchMaker Make A Match</div>
+    <div class="container">
+      <ul class="cards">
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/art.jpg" alt="art">
+          </div>
+          <div class="view back-view">
+            <img src="images/img1.jpg" alt="card1">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/art.jpg" alt="art">
+          </div>
+          <div class="view back-view">
+            <img src="images/img1.jpg" alt="card1">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/art.jpg" alt="art">
+          </div>
+          <div class="view back-view">
+            <img src="images/img2.jpg" alt="card2">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/art.jpg" alt="art">
+          </div>
+          <div class="view back-view">
+            <img src="images/img2.jpg" alt="card2">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/art.jpg" alt="art">
+          </div>
+          <div class="view back-view">
+            <img src="images/img3.jpg" alt="card3">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/art.jpg" alt="art">
+          </div>
+          <div class="view back-view">
+            <img src="images/img3.jpg" alt="card3">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/art.jpg" alt="art">
+          </div>
+          <div class="view back-view">
+            <img src="images/img4.jpg" alt="card4">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/art.jpg" alt="art">
+          </div>
+          <div class="view back-view">
+            <img src="images/img4.jpg" alt="card4">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/art.jpg" alt="art">
+          </div>
+          <div class="view back-view">
+            <img src="images/img5.jpg" alt="card5">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/art.jpg" alt="art">
+          </div>
+          <div class="view back-view">
+            <img src="images/img5.jpg" alt="card5">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/art.jpg" alt="art">
+          </div>
+          <div class="view back-view">
+            <img src="images/img6.jpg" alt="card6">
+          </div>
+        </li>
+        <li class="card">
+          <div class="view front-view">
+            <img src="images/art.jpg" alt="art">
+          </div>
+          <div class="view back-view">
+            <img src="images/img6.jpg" alt="card6">
+          </div>
+        </li>
+        <div class="details">
+          <p class="time"> Time: <span><b>30</b>s</span></p>
+          <p class="flips">Flips: <span><b>0</b></span></p>
+          <button onclick="shuffleCard()">Reset</button>
+        </div>
+      </ul>
+    </div>
+
+    <script src="script.js"></script>
     
-</head>
-<body>
-    <script defer src="app.js"></script>
-    <section class="memory-game">
-        <div class="memory-card" data-framework="aurelia"><!--will hold front face for all cards -->
-            <img class="front-face"  src="img/aurelia.svg" alt="Aurelia"/>
-            <img class="back-face"  src="img/js-badge.svg" alt="JSBadge"/>
-        </div>
-        <div class="memory-card" data-framework="aurelia"><!--will hold front face for all cards -->
-            <img class="front-face"  src="img/aurelia.svg" alt="Aurelia"/>
-            <img class="back-face"  src="img/js-badge.svg" alt="JSBadge"/>
-        </div>
-        <div class="memory-card" data-framework="ember"><!--will hold front face for all cards -->
-            <img class="front-face"  src="img/ember.svg" alt="Enber"/>
-            <img class="back-face"  src="img/js-badge.svg" alt="JSBadge"/>
-        </div>
-        <div class="memory-card" data-framework="ember"><!--will hold front face for all cards -->
-            <img class="front-face"  src="img/ember.svg" alt="Ember"/>
-            <img class="back-face"  src="img/js-badge.svg" alt="JSBadge"/>
-        </div>
-        <div class="memory-card" data-framework="backbone"><!--will hold front face for all cards -->
-            <img class="front-face"  src="img/backbone.svg" alt="Backbone"/>
-            <img class="back-face"  src="img/js-badge.svg" alt="JSBadge"/>
-        </div>
-        <div class="memory-card" data-framework="backbone"><!--will hold front face for all cards -->
-            <img class="front-face"  src="img/backbone.svg" alt="Backbone"/>
-            <img class="back-face"  src="img/js-badge.svg" alt="JSBadge"/>
-        </div>
-        <div class="memory-card" data-framework="react"><!--will hold front face for all cards -->
-            <img class="front-face"  src="img/react.svg" alt="React"/>
-            <img class="back-face"  src="img/js-badge.svg" alt="JSBadge"/>
-        </div>
-        <div class="memory-card" data-framework="react"><!--will hold front face for all cards -->
-            <img class="front-face"  src="img/react.svg" alt="React"/>
-            <img class="back-face"  src="img/js-badge.svg" alt="JSBadge"/>
-        </div>
-        <div class="memory-card" data-framework="vue"><!--will hold front face for all cards -->
-            <img class="front-face"  src="img/vue.svg" alt="Vue"/>
-            <img class="back-face"  src="img/js-badge.svg" alt="JSBadge"/>
-        </div>
-        <div class="memory-card" data-framework="vue"><!--will hold front face for all cards -->
-            <img class="front-face"  src="img/vue.svg" alt="Vue"/>
-            <img class="back-face"  src="img/js-badge.svg" alt="JSBadge"/>
-        </div>
-        <div class="memory-card" data-framework="angular"><!--will hold front face for all cards -->
-            <img class="front-face"  src="img/angular.svg" alt="Angular"/>
-            <img class="back-face"  src="img/js-badge.svg" alt="JSBadge"/>
-        </div>
-        <div class="memory-card" data-framework="angular"><!--will hold front face for all cards -->
-            <img class="front-face"  src="img/angular.svg" alt="Angular"/>
-            <img class="back-face"  src="img/js-badge.svg" alt="JSBadge"/>
-        </div>
-    </section>
-</body>
+  </body>
 </html>
