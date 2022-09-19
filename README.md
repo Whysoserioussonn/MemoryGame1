@@ -4,11 +4,11 @@ This is a version of the MEMORY card game. This game tests a user's short term m
 
 ![MemGameSS](https://user-images.githubusercontent.com/110546643/190951821-40b8c7f9-c5ad-4598-a5d5-35609beb3791.JPG)
 
-##Challenge
+## Challenge
 * YOU WIN, if you can match all the pairs under 30 seconds
 * YOU LOSE, if you time runs out.
 
-##Instructions
+## Instructions
 * Gameplay and Timer countdown begins when user clicks on ANY card to flip it over to see the painting.
 * You are allowed to 2 flips on 2 different cards
 * If they match, the cards stay face up
