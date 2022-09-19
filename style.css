@@ -4,12 +4,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: #72b4e7;;
+  color: red;
   
 }
 .title
 {
-  font-size: 28px;
+  font-size: 30px;
   color: red;
 }
 p{
@@ -21,6 +21,7 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  padding: 52px;
   background: white;
   height: 100vh; /* viewport height measures percentage, by setting to 100, our 'body'will take 100 percent of the availale height space       */
   background-image: url('https://media.giphy.com/media/2H67VmB5UEBmU/giphy.gif'); 
@@ -79,7 +80,7 @@ body{
   user-select: none;
   pointer-events: none;
   position: absolute;
-  background: #fff;
+  background:aqua;
   border-radius: 7px;
   backface-visibility: hidden;
   transition: transform 0.25s linear;
@@ -105,36 +106,54 @@ body{
   width: 100%;
   margin-top: 15px;
   padding: 0 20px;
-  border-radius: 7px;
+  border-radius: 30px;
   background: #fff;
-  height: calc(100% / 4 - 30px);
-  justify-content: space-between;
+  height: 75px;
+  justify-content: center;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+
 }
-.details p{
-  font-size: 18px;
+
+.timerStat
+{
+  width: 100%;
+  
+  margin-bottom: 15px;
+  padding: 20px;
+  border-radius: 30px;
+  background: #fff;
+  height: 75px;
+  justify-content: center;
+  
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  
+ 
+}
+ p{
+  font-size: 35px;
   height: 17px;
   padding-right: 18px;
   border-right: 1px solid #ccc;
+  background-color: transparent;
+  color:blue;
 }
-.details p span{
-  margin-left: 8px;
-}
+
 .details p b{
   font-weight: 500;
 }
 .details button{
+  font-weight: 400;
   cursor: pointer;
-  font-size: 14px;
-  color: #6563ff;
+  font-size: 18px;
+  color: #0e0bc2;
   border-radius: 4px;
   padding: 4px 11px;
-  background: #fff;
+  background: yellow;
   border: 2px solid #6563ff;
   transition: 0.3s ease;
 }
 .details button:hover{
   color: #fff;
-  background: #6563ff;
+  background: #ff2525;
 }
 

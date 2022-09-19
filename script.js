@@ -35,6 +35,7 @@ function flipCard({target: clickedCard}) {
         flipsTag.innerText = flips;
         clickedCard.classList.add("flip");
         if(!cardOne) {
+            // return the cardOne value to clickedCard
             return cardOne = clickedCard;
         }
         cardTwo = clickedCard;
@@ -56,7 +57,8 @@ function showAlertLoss()
     alert(myText);
 }
 function matchCards(img1, img2) {
-    if(img1 === img2) {
+    if(img1 === img2) // if two card's images matched
+    {
         matchedCard++;
         if(matchedCard == 6 && timeLeft > 0) {
             setTimeout(() =>{
@@ -69,7 +71,7 @@ function matchCards(img1, img2) {
         cardOne = cardTwo = "";
         return disableDeck = false;
     }
-
+    else{
     setTimeout(() => {
         cardOne.classList.add("rotate");
         cardTwo.classList.add("rotate");
@@ -81,6 +83,7 @@ function matchCards(img1, img2) {
         cardOne = cardTwo = "";
         disableDeck = false;
     }, 1200);
+}
 }
 
 function shuffleCard() {
@@ -110,6 +113,7 @@ shuffleCard();
 
 refreshBtn.addEventListener("click", shuffleCard);
 
+// adding click event to all cards
 cards.forEach(card => {
     card.addEventListener("click", flipCard);
 });
