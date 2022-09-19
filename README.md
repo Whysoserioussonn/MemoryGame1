@@ -2,7 +2,8 @@
 
 This is a version of the MEMORY card game. This game tests a user's short term memory where they need to match pairs of famous paintings by turning over 2 cards at a time.
 
-![MemGameSS](https://user-images.githubusercontent.com/110546643/190951821-40b8c7f9-c5ad-4598-a5d5-35609beb3791.JPG)
+![memgamess3](https://user-images.githubusercontent.com/110546643/191077531-8bb4425d-eb59-4464-908e-36ba9312792f.JPG)
+
 
 ##
 The paintings included for this game:
