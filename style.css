@@ -31,10 +31,7 @@ body{
   background-size: cover;
     
 }
-::selection{
-  color: #fff;
-  background: #6563ff;
-}
+
 .container{
   padding: 25px;
   background: #2708a2;
