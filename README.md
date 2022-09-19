@@ -1,7 +1,8 @@
 # Matchmaker MatchMaker Make Me a Match
 
 This is a version of the MEMORY card game. This game tests a user's short term memory where they need to match pairs of famous paintings by turning over 2 cards at a time.
-
+## Link to Play the Game
+https://whysoserioussonn.github.io/MemoryGame1/
 ![memgamess3](https://user-images.githubusercontent.com/110546643/191077531-8bb4425d-eb59-4464-908e-36ba9312792f.JPG)
 
 
