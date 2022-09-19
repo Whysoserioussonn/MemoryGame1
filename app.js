@@ -71,13 +71,13 @@ function matchCards(img1, img2) {
     }
 
     setTimeout(() => {
-        cardOne.classList.add("shake");
-        cardTwo.classList.add("shake");
+        cardOne.classList.add("rotate");
+        cardTwo.classList.add("rotate");
     }, 400);
 
     setTimeout(() => {
-        cardOne.classList.remove("shake", "flip");
-        cardTwo.classList.remove("shake", "flip");
+        cardOne.classList.remove("rotate", "flip");
+        cardTwo.classList.remove("rotate", "flip");
         cardOne = cardTwo = "";
         disableDeck = false;
     }, 1200);
@@ -104,6 +104,7 @@ function shuffleCard() {
         card.addEventListener("click", flipCard);
     });
 }
+
 
 shuffleCard();
 
