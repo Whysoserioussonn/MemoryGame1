@@ -4,9 +4,18 @@ This is a version of the MEMORY card game. This game tests a user's short term m
 
 ![MemGameSS](https://user-images.githubusercontent.com/110546643/190951821-40b8c7f9-c5ad-4598-a5d5-35609beb3791.JPG)
 
+##
+The paintings included for this game:
+* Mona Lisa by Leonardo da Vinci, 1503
+* Self Portrait by Vincent van Gogh, 1889 
+* Girl with a Pearl Earring by Johannes Vermeer, 1665
+* Starry Night by Vincent van Gogh, 1889
+* American Gothic by Grant Wood, 1930
+* Salvator Mundi by Leonardo da Vinci, 1500
+
 ## Challenge
 * YOU WIN, if you can match all the pairs under 30 seconds
-* YOU LOSE, if you time runs out.
+* YOU LOSE, if time runs out.
 
 ## Instructions
 * Gameplay and Timer countdown begins when user clicks on ANY card to flip it over to see the painting.
