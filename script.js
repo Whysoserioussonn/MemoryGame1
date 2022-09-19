@@ -52,6 +52,7 @@ function flipCard({target: clickedCard}) {
 // fucntion to display message YOU WIN after all matches are found
 function showAlert()
 {
+    
     var myText = "You WIN";
     alert(myText);
 }
