@@ -31,7 +31,12 @@ body{
   background-size: cover;
     
 }
-
+.instructions
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .container{
   padding: 25px;
   background: #2708a2;
