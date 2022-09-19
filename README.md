@@ -2,10 +2,7 @@
 
 This is a version of the MEMORY card game. This game tests a user's short term memory where they need to match pairs of famous paintings by turning over 2 cards at a time.
 
-![image](https://user-images.githubusercontent.com/110546643/190965222-52dcfdf1-85e9-45aa-9c97-9cf34384449d.png)
-
-
-
+![MemGameSS](https://user-images.githubusercontent.com/110546643/190951821-40b8c7f9-c5ad-4598-a5d5-35609beb3791.JPG)
 
 ##
 The paintings included for this game:
@@ -34,3 +31,14 @@ This game was constructed using vanilla Javascript, CSS, and HTML.
 * created a counter that counts the number of flips made by the player*
 * created a timer to make it a challenge
 * created a rotation animation on the cards that were selected that didnt pair up, this eats up a fraction of time. 
+
+
+## Installation
+* You can clone the repo at the following link.
+* https://github.com/Whysoserioussonn/MemoryGame1
+* Go to code dropdown menu
+* Copy the URL for the repository
+* Open Git Bash.
+* Change the current working directory to the location where you want the cloned directory.
+* Type git clone, and then paste the URL you copied earlier.
+* Press Enter to create your local clone.
