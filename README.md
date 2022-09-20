@@ -44,3 +44,10 @@ This game was constructed using vanilla Javascript, CSS, and HTML.
 * Change the current working directory to the location where you want the cloned directory.
 * Type git clone, and then paste the URL you copied earlier.
 * Press Enter to create your local clone.
+
+
+## Future Developments
+* Making a modal for Wins and Losses
+* Making a modal for each time the player guess right or wrong on a side panel that doesnt interferece with gameplay time
+* Have a selection of themes to choose from to go along with Famous Paintings theme.
+* Include this game in another game like RPG as a side quest or mini game within the game.
